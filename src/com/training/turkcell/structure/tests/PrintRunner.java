@@ -3,6 +3,7 @@ package com.training.turkcell.structure.tests;
 //proxy pattern
 public class PrintRunner {
     public static void main(String[] args) {
+        CustomerProvisionWs provisionWs = new CustomerProvisionWs();
         PrintSystem printSystem = new PrintSystemProxy();
         Customer customer = new Customer();
         customer.setName("nursen");
@@ -20,5 +21,9 @@ public class PrintRunner {
         //adapter pattern
         CustomerMusteriAdapter adapter = new CustomerMusteriAdapter(musteri);
         printSystem.print(adapter);
+
+        //
+        System.out.println(provisionWs.add(customer));
+
     }
 }
