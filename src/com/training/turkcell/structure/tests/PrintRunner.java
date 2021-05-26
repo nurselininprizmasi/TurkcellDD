@@ -1,13 +1,14 @@
 package com.training.turkcell.structure.tests;
 
+//proxy pattern
 public class PrintRunner {
     public static void main(String[] args) {
-        PrintSystem printSystem = new PrintSystem();
+        PrintSystem printSystem = new PrintSystemProxy();
         Customer customer = new Customer();
-        customer.setName("nurşen");
+        customer.setName("nursen");
         customer.setSurname("altinbas");
         customer.setGender("kadın");
-        printSystem.print(customer);
+        //printSystem.print(customer);
 
 
         Musteri musteri = new Musteri();
