@@ -1,7 +1,8 @@
 package com.training.turkcell.structure.tests;
 
-public class PrintSystem {
+public class PrintSystem implements IPrintSystem{
+    @Override
     public void print(Customer customer){
-        System.out.println("Sayin " + customer.getName() +" " +customer.getSurname()+"\n");
+        System.out.println(customer.getName() +" " +customer.getSurname()+"\n");
     }
 }

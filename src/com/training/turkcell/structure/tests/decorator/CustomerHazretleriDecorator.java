@@ -2,11 +2,11 @@ package com.training.turkcell.structure.tests.decorator;
 
 import com.training.turkcell.structure.tests.Customer;
 
-public class CustomerHazretleri extends Customer {
+public class CustomerHazretleriDecorator extends Customer {
 
     private Customer customer;
 
-    public CustomerHazretleri(Customer customer) {
+    public CustomerHazretleriDecorator(Customer customer) {
         this.customer = customer;
     }
 

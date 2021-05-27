@@ -17,7 +17,7 @@ public class DecoratorRun {
         Customer customerNew2 = new CustomerGenderDecorator(new CustomerSayinDecorator(customer));
         printSystem.print(customerNew2);
 
-        Customer customerNew3 = new CustomerGenderDecorator(new CustomerSayinDecorator(new CustomerHazretleri(customer)));
+        Customer customerNew3 = new CustomerGenderDecorator(new CustomerSayinDecorator(new CustomerHazretleriDecorator(customer)));
         printSystem.print(customerNew3);
     }
 }
