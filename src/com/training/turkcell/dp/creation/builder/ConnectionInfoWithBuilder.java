@@ -45,7 +45,8 @@ public class ConnectionInfoWithBuilder {
 	public long getConnectionTimeout() {
 		return this.connectionTimeout;
 	}
-	
+
+	// Builder class dönüşü
 	public static ConnectionInfoWithBuilderHelper getBuilder() {
 		return new ConnectionInfoWithBuilderHelper();
 	}
