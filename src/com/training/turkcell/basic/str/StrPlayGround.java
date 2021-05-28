@@ -16,5 +16,14 @@ public class StrPlayGround {
         for (int i = 0; i < 100; i++) {
             str1 += "nursen altinbas " + random.nextInt();
         }
+
+        StringBuilder builderLoc2 = new StringBuilder(50);
+        builderLoc2.append("osman");
+        builderLoc2.append("id:");
+        builderLoc2.append(random.nextInt());
+        builderLoc2.append("dsfsd");
+
+        String str2 = "osman id:" + random.nextInt() + " djshfsd ";
+        str2 += " dsfsd";
     }
 }
