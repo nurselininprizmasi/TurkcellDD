@@ -30,4 +30,8 @@ public class Observer implements IListener{
             listener.phase3(msg);
         }
     }
+
+    public void register(IListener iListener){
+        this.listenerList.add(iListener);
+    }
 }
