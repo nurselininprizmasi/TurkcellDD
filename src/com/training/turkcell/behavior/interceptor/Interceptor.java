@@ -11,9 +11,9 @@ public class Interceptor implements IInterceptor {
         RunCommand runCommand = new RunCommand();
         SearchCommand searchCommand = new SearchCommand();
         AltInterceptor altInterceptorLoc = new AltInterceptor();
-        this.map.put(dirCommand.getCommanStr(), dirCommand);
-        this.map.put(runCommand.getCommanStr(), runCommand);
-        this.map.put(searchCommand.getCommanStr(), searchCommand);
+        this.map.put(dirCommand.getCommandStr(), dirCommand);
+        this.map.put(runCommand.getCommandStr(), runCommand);
+        this.map.put(searchCommand.getCommandStr(), searchCommand);
         this.map.put(altInterceptorLoc.getCommandStr(), altInterceptorLoc);
     }
 

@@ -8,7 +8,7 @@ public class DirCommand implements IInterceptor {
     }
 
     @Override
-    public String getCommanStr() {
+    public String getCommandStr() {
         return "dir";
     }
 }
